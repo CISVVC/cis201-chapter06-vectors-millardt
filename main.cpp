@@ -44,8 +44,7 @@ void add_transactions(Transactionlog &tlog)
 int main()
 {
     Transactionlog tlog;
-
-    tlog.add_transaction(Transaction(15,-255,"Cash Withdraw"));
+    add_transactions(tlog);
                                             
     tlog.print_report_for_day();
 

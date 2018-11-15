@@ -1,20 +1,18 @@
+# http://pirate.shu.edu/~minimair/assembler/Makefile
 #
 all: main
 
-
-main : 
-	@echo "Making the executable -- some warnings can be safely ignored"
-	@g++ -o main *.cpp 
+main :  *.cpp
+	 g++ -std=c++11 -o main *.cpp 
 
 run : main
-	@echo "Running the program:"
-	@./main
+	 ./main
 
 edit:
-	@vim main.cpp
+	 vim *.cpp
 
 debug:
-	@gdb ./main
+	 gdb ./main
 
 clean :
-	@rm main
+	@rm *.0  main

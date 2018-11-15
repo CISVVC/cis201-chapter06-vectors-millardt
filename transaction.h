@@ -7,7 +7,7 @@ class Transaction
     double m_amount;
 
 public:
-    Transaction(int day, int amount);
+    Transaction(int day, double amount);
     int get_day();
     double get_amount();
     void print();

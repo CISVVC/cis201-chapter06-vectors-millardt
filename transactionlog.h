@@ -9,7 +9,9 @@ class Transactionlog
 
 public:
     void add_transaction(const Transaction &t);
-    std::vector<double> day_balances();
+   // double day_balances();
+    void print_statement();
+   
     double get_day_total(int day);
     void print_report_for_day();
     void print_day_transactions(int day);
