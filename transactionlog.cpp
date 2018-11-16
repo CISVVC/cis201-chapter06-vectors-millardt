@@ -7,6 +7,7 @@ void Transactionlog::add_transaction(const Transaction &transaction)
     m_transactions.push_back(transaction);
 }
 
+/*
 void Transactionlog::print_statement()
 {
     
@@ -25,9 +26,9 @@ void Transactionlog::print_statement()
         std::cout << "Total: " << day_balance[i] << std::endl;
     }
 }
+*/
 
-/*
-double Transactionlog::day_balances()
+std::vector<double> Transactionlog::day_balances()
 {
     std::vector<double> balances;
     double total = 0;
@@ -36,9 +37,8 @@ double Transactionlog::day_balances()
         total = total + get_day_total(day+1);
         balances.push_back(total);
     }
-    return total;
+    return balances;
 }
-*/
 
 double Transactionlog::get_day_total(int day)
 {
@@ -75,12 +75,12 @@ void Transactionlog::print_day_transactions(int day)
 
 void Transactionlog::print_report_for_day()
 {
-    std::vector<double> balances = print_statement()
+    std::vector<double> balances = day_balances();
 
     for(int day=0;day < MONTH_SIZE;day++)
     {
-        print_day_transactions(day+1)
-        std::cout << "Date" day + 1 << "balance = " << balances[day] << std::endl;
+        print_day_transactions(day+1);
+        std::cout << "Date" << day + 1 << "balance = " << balances[day] << std::endl;
     }
 
     std::cout << "Average day balance: " << get_average_balance(balances) << std::endl;
