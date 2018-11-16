@@ -3,14 +3,14 @@
 
 class Transaction
 {
-    int m_day
+    int m_day;
     double m_amount;
 
 public:
-    Transaction(int day, int amount);
+    Transaction(int day, double amount);
     int get_day();
     double get_amount();
     void print();
-}
+};
 
 #endif

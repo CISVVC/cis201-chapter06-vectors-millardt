@@ -7,12 +7,12 @@ Transaction::Transaction(int day, double amount)
     m_amount = amount;
 }
 
-int Transaction::Transaction(get_day)
+int Transaction::get_day()
 {
     return m_day;
 }
 
-int Transaction::get_amount()
+double Transaction::get_amount()
 {
     return m_amount;
 }

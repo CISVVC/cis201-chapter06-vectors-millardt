@@ -5,6 +5,11 @@
 // it is assumed that you will create the transaction.h and transaction.cpp files
 // NOTE!!!  put Transactionlog in a separate file 
 
+
+//IS THIS COMITTTING?
+
+
+
 void add_transactions(Transactionlog &tlog)
 {
     tlog.add_transaction(Transaction(1,5)); //1 5
@@ -44,8 +49,7 @@ void add_transactions(Transactionlog &tlog)
 int main()
 {
     Transactionlog tlog;
-
-    tlog.add_transaction(Transaction(15,-255,"Cash Withdraw"));
+    add_transactions(tlog);
                                             
     tlog.print_report_for_day();
 
