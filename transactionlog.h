@@ -1,6 +1,7 @@
 #ifndef TRANSACTIONLOG_H
 #define TRANSACTIONLOG_H
 #include<vector>
+#include<string>
 #include "transaction.h"
 
 class Transactionlog

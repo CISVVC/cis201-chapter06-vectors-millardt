@@ -1,10 +1,11 @@
 #include <iostream>
 #include"transaction.h"
 
-Transaction::Transaction(int day, double amount)
+Transaction::Transaction(int day, double amount, int stringholder/*TEMPORARYSTUFFFFFFF*/ )
 {
     m_day = day;
     m_amount = amount;
+    m_stringholder = stringholder;////////////////
 }
 
 int Transaction::get_day()
@@ -17,7 +18,7 @@ double Transaction::get_amount()
     return m_amount;
 }
 
-void Transaction::print()
+int Transaction::get_stringholder()///////////
 {
-    std::cout << "Day turnout " << m_day << " is " << m_amount << std::endl;
+    return m_stringholder;
 }
