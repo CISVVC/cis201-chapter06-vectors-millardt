@@ -2,7 +2,7 @@
 
 #include "transaction.h"
 #include "transactionlog.h"
-
+// ISSSS THISSSS COMITTTTTINGGGGGG
 
 void add_transactions(Transactionlog &tlog)
 {
@@ -35,10 +35,8 @@ void add_transactions(Transactionlog &tlog)
     tlog.add_transaction(Transaction( 27 , 1 ));
     tlog.add_transaction(Transaction( 28 , 1 )); */
     tlog.add_transaction(Transaction( 29 , 1, 1004 ));
-    tlog.add_transaction(Transaction( 30 , 1, 1005 )); //30 10
-       
+    tlog.add_transaction(Transaction( 30 , 1, 1005 )); //30 10       
 }
-
 
 int main()
 {
