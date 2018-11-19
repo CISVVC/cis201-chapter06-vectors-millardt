@@ -9,10 +9,10 @@ class Transaction
    // std::string description;
 
 public:
-    Transaction(int day, double amount, int m_stringholder);///////////
+    Transaction(int day, double amount, double stringholder);///////////
     int get_day();
     double get_amount(); 
-    int get_stringholder();//////////////
+    double get_stringholder();//////////////
 };
 
 #endif

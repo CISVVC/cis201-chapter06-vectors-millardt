@@ -1,7 +1,7 @@
 #include <iostream>
 #include"transaction.h"
 
-Transaction::Transaction(int day, double amount, int stringholder/*TEMPORARYSTUFFFFFFF*/ )
+Transaction::Transaction(int day, double amount, double stringholder/*TEMPORARYSTUFFFFFFF*/ )
 {
     m_day = day;
     m_amount = amount;
@@ -18,7 +18,7 @@ double Transaction::get_amount()
     return m_amount;
 }
 
-int Transaction::get_stringholder()///////////
+double Transaction::get_stringholder()///////////
 {
     return m_stringholder;
 }

@@ -2,15 +2,14 @@
 
 #include "transaction.h"
 #include "transactionlog.h"
-// ISSSS THISSSS COMITTTTTINGGGGGG
 
 void add_transactions(Transactionlog &tlog)
 {
     tlog.add_transaction(Transaction( 1 , 5, 1001 )); //1 5
     tlog.add_transaction(Transaction( 2 , 10, 1002));
     tlog.add_transaction(Transaction( 3 , 15, 1003));
- /*   tlog.add_transaction(Transaction( 4 , 20 ));
-    tlog.add_transaction(Transaction( 5 , 25 ));
+    tlog.add_transaction(Transaction( 4 , 20, 1004 ));
+   /* tlog.add_transaction(Transaction( 5 , 25 ));
     tlog.add_transaction(Transaction( 6 , 30 ));
     tlog.add_transaction(Transaction( 7 , 5 )); 
     tlog.add_transaction(Transaction( 8 , 5 ));
@@ -34,8 +33,8 @@ void add_transactions(Transactionlog &tlog)
     tlog.add_transaction(Transaction( 26 , 1 ));
     tlog.add_transaction(Transaction( 27 , 1 ));
     tlog.add_transaction(Transaction( 28 , 1 )); */
-    tlog.add_transaction(Transaction( 29 , 1, 1004 ));
-    tlog.add_transaction(Transaction( 30 , 1, 1005 )); //30 10       
+//    tlog.add_transaction(Transaction( 29 , 1, 1005 ));
+//    tlog.add_transaction(Transaction( 30 , 1, 1006 )); //30 52       
 }
 
 int main()
